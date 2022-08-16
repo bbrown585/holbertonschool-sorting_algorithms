@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "sort.h"
+
 /**
  * bubble_sort - sort an int array with bubble_sort
  * @array: array of integers of size
@@ -10,6 +11,9 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j, k;
+	
+	if (size < 2)
+		return;
 
 	for (i = 0; i < size; i++)
 	{
