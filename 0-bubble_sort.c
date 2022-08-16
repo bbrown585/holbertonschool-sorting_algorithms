@@ -10,7 +10,8 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j, k;
+	unsigned int i, j;
+       	int k;
 
 	if (size < 2)
 		return;
